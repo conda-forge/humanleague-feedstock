@@ -24,7 +24,6 @@ requirements:
     - pytest-runner
   run:
     - python
-    - numpy >=1.18
 
 test:
   imports:
