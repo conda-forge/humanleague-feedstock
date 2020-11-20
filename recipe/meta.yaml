@@ -1,6 +1,6 @@
 {% set name = "humanleague" %}
-{% set version = "2.1.1" %}
-{% set sha256 = "bc4daae7178c9459324328823215054e2630da796c6d64457e25e3b154c36081" %}
+{% set version = "2.1.7" %}
+{% set sha256 = "1c2107980c8099652ee4cf0b78f35fdb54e73a2e306acb341f1f1fb3ba472f51" %}
 
 package:
   name: {{ name|lower }}
@@ -11,8 +11,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1002
-  skip: True  # [py < 34]
+  number: 0
+  skip: true  # [py < 34]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -21,7 +21,8 @@ requirements:
   host:
     - python
     - pip
-    - numpy
+    - pybind11 >=2.5.0
+    - pytest-runner
   run:
     - python
     - numpy
