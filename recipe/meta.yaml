@@ -1,6 +1,6 @@
 {% set name = "humanleague" %}
-{% set version = "2.1.10" %}
-{% set sha256 = "a217bc6ba5b30b2ed026cafb0ea4c26eed73df8af635245469b9374282073d40" %}
+{% set version = "2.1.11" %}
+{% set sha256 = "7666a5edf3b55f94a5d64be6f942bd0f923eaa00cce63c8332ce59b17fbceefb" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   skip: true  # [py < 34]
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
