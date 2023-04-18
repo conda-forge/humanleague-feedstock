@@ -1,6 +1,6 @@
 {% set name = "humanleague" %}
-{% set version = "2.1.11" %}
-{% set sha256 = "7666a5edf3b55f94a5d64be6f942bd0f923eaa00cce63c8332ce59b17fbceefb" %}
+{% set version = "2.2.0" %}
+{% set sha256 = "d3a57fef2d23c5bb97208cea1597b1ccb52942bded61c454e60f68ae89492db0" %}
 
 package:
   name: {{ name|lower }}
